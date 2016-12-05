@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "hw-client-side-solution",
+    "id": "12b03e8d-033e-40de-b365-5213f91c202b",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/hw.spapp"
+  }
+}

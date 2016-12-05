@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Chrome against localhost, with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "https://melcherit.sharepoint.com/sites/spfx/_layouts/15/workbench.aspx",
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}",
+            "sourceMapPathOverrides": {
+                "webpack:///./*": "${webRoot}/*", // Example: "webpack:///./src/app.js" -> "/users/me/project/src/app.js"
+                "webpack:///*": "*"// Example: "webpack:///C:/project/app.ts" -> "C:/project/app.ts",
+                ,"webpack:///..//*": "*"
+            }
+        },
+        {
+            "name": "Attach to Chrome, with sourcemaps",
+            "type": "chrome",
+            "request": "attach",
+            "port": 9222,
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}"
+        }
+    ]
+}
